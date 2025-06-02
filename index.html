@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!-- Barre de progression -->
+    <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+        <div class="progress-step active" data-step="1">🌳</div>
+        <div class="progress-step" data-step="2">👻</div>
+        <div class="progress-step" data-step="3">🌙</div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="story-container">
+        <!-- SECTION 1: THE BEGINNING OF THE ADVENTURE -->
+        <section class="story-section" id="section1">
+            <div class="text-block">
+                <h2>The Beginning of the Adventure</h2>
+                <p>In a distant kingdom, bordered by ancient oaks and morning mist, lay the Enchanted Forest. It was
+                    said that deep within its depths lay a millennial secret, guarded by ancient spirits.</p>
+                <button class="next-section-btn">Continue the story</button>
+            </div>
+            <div class="image-block">
+                <img src="https://raw.githubusercontent.com/mickaellherminez/img/main/codepen/january-week1/image-1.png" 
+                     alt="Illustration of the Enchanted Forest" 
+                     class="image-placeholder" />
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE MYSTERIOUS CREATURE -->
+        <section class="story-section" id="section2">
+            <div class="text-block">
+                <h2>The Mysterious Creature</h2>
+                <p>As the trees thickened and the light grew scarce, a silhouette appeared. It was said that this
+                    creature watched over the balance of the forest, protecting all living beings from a forgotten evil.
+                </p>
+                <button class="next-section-btn">Discover the next part</button>
+            </div>
+            <div class="image-block">
+                <img src="https://raw.githubusercontent.com/mickaellherminez/img/main/codepen/january-week1/image-2.png" 
+                     alt="Illustration of the mythical creature" 
+                     class="image-placeholder" />
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE ULTIMATE CHALLENGE -->
+        <section class="story-section" id="section3">
+            <div class="text-block">
+                <h2>The Ultimate Challenge</h2>
+                <p>Guided by unexpected courage, the adventurer prepared to break the curse that lay upon these lands.
+                    The fate of the Enchanted Forest now rested in their hands.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://raw.githubusercontent.com/mickaellherminez/img/main/codepen/january-week1/image-3.png" 
+                     alt="Illustration of the final ritual" 
+                     class="image-placeholder" />
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+        <img class="modal-image" src="" alt="Image en grand">
+        <div class="modal-close"><span>×</span></div>
+    </div>
+
+    <!-- Scripts - Important: Load in this order at the end of body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Register ScrollTrigger plugin
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Initialize elements after DOM is loaded
+            const sections = document.querySelectorAll(".story-section");
+            const progressBar = document.querySelector(".progress-bar-fill");
+            const steps = document.querySelectorAll(".progress-step");
+
+            // Verify elements exist before proceeding
+            if (!sections.length || !progressBar || !steps.length) {
+                console.error("Required elements not found");
+                return;
+            }
+
+            // Now load the main script
+            const script = document.createElement('script');
+            script.src = 'script.js';
+            document.body.appendChild(script);
+        });
+    </script>
+</body>
+</html>

@@ -18,10 +18,35 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Check if name is valid
     if (!rawName || !nameMapping.hasOwnProperty(rawName)) {
-        // Completely blank the page for invalid/missing names
-        document.body.innerHTML = '<!DOCTYPE html><html><head><title>Access Denied</title></head><body></body></html>';
-        document.body.style.backgroundColor = 'white';
-        document.documentElement.style.backgroundColor = 'white';
+        // Tampilkan pesan error yang informatif
+        document.body.innerHTML = `
+            <div style="
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 100vh; 
+                font-family: Arial, sans-serif;
+                background: white;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+            ">
+                <div style="
+                    text-align: center;
+                    background: #f8f9fa;
+                    padding: 40px;
+                    border-radius: 15px;
+                    border: 1px solid #e0e0e0;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+                ">
+                    <h1 style="font-size: 2.5em; margin-bottom: 20px; color: #dc3545;">🚫 Access Denied</h1>
+                    <p style="font-size: 1.2em; margin-bottom: 10px; color: #666;">Invalid or missing invitation code</p>
+                    <p style="font-size: 1.2em; opacity: 0.7; color: #666;">Gausah diganti-ganti ya query nya</p>
+                </div>
+            </div>
+        `;
+        document.body.style.margin = '0';
         window.history.replaceState({}, '', window.location.pathname);
         return; // Stop execution here
     }

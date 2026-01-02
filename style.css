@@ -383,3 +383,58 @@ body.dark-theme h2,
 body.dark-theme p {
     color: #f4f4f9;
 }
+.invite {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Subtitle */
+.invite-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 16px;
+}
+
+/* Couple name */
+.couple-name {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+
+.couple-name span {
+    display: block;
+}
+
+/* Ampersand */
+.couple-name .ampersand {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 8px 0;
+    opacity: 0.8;
+}
+
+/* Wedding title */
+.invite-title {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    opacity: 0.85;
+}
+.wedding-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: none;
+    opacity: 0.9;
+}
+
+/* Button spacing */
+.invite .next-section-btn {
+    margin-top: 24px;
+}

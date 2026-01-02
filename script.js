@@ -187,10 +187,14 @@ function setupProgressAndThemes() {
     });
 
     // Next section buttons
-    document.querySelectorAll(".next-section-btn").forEach((btn, index) => {
+    document.querySelectorAll(".next-section-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
-            if (index < sections.length - 1) {
-                sections[index + 1].scrollIntoView({ behavior: "smooth" });
+            const currentSection = btn.closest(".story-section");
+            if (!currentSection) return;
+
+            const nextSection = currentSection.nextElementSibling;
+            if (nextSection && nextSection.classList.contains("story-section")) {
+                nextSection.scrollIntoView({ behavior: "smooth" });
             }
         });
     });

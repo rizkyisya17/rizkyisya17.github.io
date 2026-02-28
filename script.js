@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         'elok_suami': 'Elok Okta & Suami',
         'ragiel_sekeluarga': 'Ragiel Larasati & Keluarga',
         'BPJS': 'BPJS',
-        
+        'baihaqi': 'Baihaqi',
     };
 
     const urlParams = new URLSearchParams(window.location.search);

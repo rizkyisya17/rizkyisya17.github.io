@@ -6,11 +6,53 @@ let sections, progressBar, steps;
 document.addEventListener("DOMContentLoaded", function () {
     // Name validation first
     const nameMapping = {
-        'bobby': 'Bobby',
-        'nvidia_employee': 'Nvidia Employee',
-        'john_doe': 'John Doe',
-        'admin': 'Administrator',
-        'denis': 'Denistya Amalia'
+        'hit_employee': 'HIT Employee',
+        'akbar': 'Akbar',
+        'eko': 'Eko',
+        'kelas_perawatan': 'Kelas A Perawatan',
+        'mipa_3': 'Smaven MIPA 3',
+        'mipa_1': 'Smasix MIPA 1',
+        'kayuh_baimbai': 'Paguyuban Kayuh Baimbai',
+        'lemak': 'Penghancur Lemak',
+        'asiyah_putri' : 'Aisyah Putri',
+        'fahmik_intan' : 'Fahmik & Intan',
+        'norida': 'Norida',
+        'noor_atika': 'Noor Atika',
+        'meilina': 'Meilina',
+        'profesi_ners': 'Profesi Ners',
+        'hafizah': 'Hafizah',
+        'farizan': 'Farizan Naufal',
+        'azhar': 'Setiawan Azhar',
+        'fathur': 'Fathurrahmah',
+        'husna': 'Maghfiratul Husna',
+        'chicha': 'Chicha',
+        'regina': 'Regina',
+        'amey': 'Amey',
+        'clarissa': 'Clarissa',
+        'isti': 'Isti',
+        'putri_selayar': 'Putri Selayar',
+        'winda': 'Winda',
+        'hafidh': 'Hafidh Sajid',
+        'dina_amalia': 'Dina Amalia',
+        'aulia_rahimah': 'Aulia Rahimah',
+        'rizqa': 'Rizqa',
+        'rizki_norfadli': 'Rizki Norfadli',
+        'alfisah_amel': 'Kak Alfisah & Amel',
+        'nadya': 'Nadya',
+        'maylin': 'Maylina',
+        'niken': 'Niken',
+        'dwi': 'Dwi', 
+        'ibu_maria': 'Ibu Maria',
+        'rahmaniah': 'Rahmaniah',
+        'anggita': 'Anggita',
+        'assa_sekeluarga': 'Assa & Keluarga',
+        'shella': 'Shella',
+        'riswanda_istri': 'Riswanda & Istri',
+        'rizal_rifai': 'Rizal Rifai',
+        'elok_suami': 'Elok Okta & Suami',
+        'ragiel_sekeluarga': 'Ragiel Larasati & Keluarga',
+        'BPJS': 'BPJS',
+        
     };
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -42,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ">
                     <h1 style="font-size: 2.5em; margin-bottom: 20px; color: #dc3545;">🚫 Access Denied</h1>
                     <p style="font-size: 1.2em; margin-bottom: 10px; color: #666;">Invalid or missing invitation code</p>
-                    <p style="font-size: 1.2em; opacity: 0.7; color: #666;">Gausah diganti-ganti ya query nya</p>
+                    <p style="font-size: 1.2em; opacity: 0.7; color: #666;">Gausah diganti-ganti ya</p>
                 </div>
             </div>
         `;

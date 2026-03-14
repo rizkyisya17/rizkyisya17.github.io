@@ -6,22 +6,29 @@ let sections, progressBar, steps;
 document.addEventListener("DOMContentLoaded", function () {
     // Name validation first
     const nameMapping = {
-        'hit_employee': 'HIT Employee',
+        //Isya
+        'hit_employee': 'Teman teman HIT',
         'akbar': 'Akbar',
         'eko': 'Eko',
-        'kelas_perawatan': 'Kelas A Perawatan',
         'mipa_3': 'Smaven MIPA 3',
+        'lemak': 'Penghancur Lemak',
+        'fahmik_intan' : 'Fahmik & Intan',
+        'farizan': 'Farizan Naufal',
+        'baihaqi': 'Baihaqi',
+        'rizki_bayu': 'Rizki Bayu',
+        'Rinaldi': 'Rinaldi',
+        'mas_rifki': 'Mas Rifki',
+        'Iqbal': 'Iqbal',
+        //Denistya Amalia
+        'kelas_perawatan': 'Kelas A Perawatan',
         'mipa_1': 'Smasix MIPA 1',
         'kayuh_baimbai': 'Paguyuban Kayuh Baimbai',
-        'lemak': 'Penghancur Lemak',
-        'asiyah_putri' : 'Aisyah Putri',
-        'fahmik_intan' : 'Fahmik & Intan',
+        'aisyah_putri' : 'Aisyah Putri',
         'norida': 'Norida',
         'noor_atika': 'Noor Atika',
         'meilina': 'Meilina',
         'profesi_ners': 'Profesi Ners',
         'hafizah': 'Hafizah',
-        'farizan': 'Farizan Naufal',
         'azhar': 'Setiawan Azhar',
         'fathur': 'Fathurrahmah',
         'husna': 'Maghfiratul Husna',
@@ -52,7 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
         'elok_suami': 'Elok Okta & Suami',
         'ragiel_sekeluarga': 'Ragiel Larasati & Keluarga',
         'BPJS': 'BPJS',
-        'baihaqi': 'Baihaqi',
+        'najwa': 'Najwa',
+        'you': 'You',
     };
 
     const urlParams = new URLSearchParams(window.location.search);
